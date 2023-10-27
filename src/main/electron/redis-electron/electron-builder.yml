@@ -1,5 +1,6 @@
 appId: "redis-app"
 asar: false
+target: zip
 nsis:
   oneClick: false
   perMachine: true
@@ -7,3 +8,8 @@ nsis:
   warningsAsErrors: false
   createDesktopShortcut: true
   createStartMenuShortcut: true
+mac:
+  target:
+    - target: zip
+      arch: arm64
+
